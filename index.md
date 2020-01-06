@@ -1,3 +1,6 @@
+layout: page
+title: "PAGE TITLE"
+
 # Onboarding Record Evolution
 
 This Repo contains some guidanc and learning tutorials to get familiar with our tech stack

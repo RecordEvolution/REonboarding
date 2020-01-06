@@ -13,8 +13,15 @@ Set up your user
 
 ## Install the following Software on your Mac Book
 
-#### Chrome 
-2. GDrive (Google file drive stream)
+#### Google Chrome Browser
+[Download from: https://www.google.de/chrome/](https://www.google.de/chrome/)
+
+
+### Google GDrive 
+install the GDrive file stream adapter to your mac so that our GDrive system is available on your local file system on your Mac Book
+Therefore follow the instructions in
+[Download and HowTo at: https://www.google.com/drive/download/ ](https://www.google.com/drive/download/)
+
 3. Slack (local client)
 4. Homberew (https://brew.sh/)
 4.1 git (brew install git) —> done
@@ -22,7 +29,7 @@ Set up your user
 5.3 pypy3 (brew install pypy3) —> done
 5.4 python3 (brew install python3) —> done
 5.4.1 bumpversion (sudo pip3 install bumpversion)
-
+git 
 5. npm/Node
 5.1 nodejs —> done
 5.2 bower —> done
