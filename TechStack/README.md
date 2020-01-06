@@ -13,8 +13,8 @@ Set up your user
 
 ## Install the following Software on your Mac Book
 
-#### Google Chrome Browser
-[Download from: https://www.google.de/chrome/](https://www.google.de/chrome/)
+### Google Chrome Browser
+Download Chrome from: [https://www.google.de/chrome/](https://www.google.de/chrome/)
 
 
 ### Google GDrive 
@@ -23,7 +23,7 @@ Therefore follow the instructions in
 [Download and HowTo at: https://www.google.com/drive/download/ ](https://www.google.com/drive/download/)
 
 ### Slack
-Go to the Apple App Store, install the local client to your Mac Book and create your user account. ([More information: ](https://slack.com/intl/de-de/downloads/mac))
+Go to the Apple App Store, install the local client to your Mac Book and create your user account. ([More information on slack.com: ](https://slack.com/intl/de-de/downloads/mac))
 Join our workspace `recordevolution.slack.com` where you should have been added. If not reach out to Marko
 
 
@@ -31,15 +31,15 @@ Join our workspace `recordevolution.slack.com` where you should have been added.
 (https://brew.sh/)
 
 ### Git 
-[Download git from https://git-scm.com/downloads](https://git-scm.com/downloads) and install on your Mac Book.
-Configure git and connect it to Github. 
+Download Git from [https://git-scm.com/downloads](https://git-scm.com/downloads) and install on your Mac Book.
+Configure git so that you can connect via ssh to our Github repositories.
 
 ### Node and npm 
-[Download Node.js from https://nodejs.org/en/download/](https://nodejs.org/en/download/) and install on your Mac Book.
+Download Node.js from [https://nodejs.org/en/download/](https://nodejs.org/en/download/) and install on your Mac Book.
 !Warning: do not install node and npm via brew. This causes some weird error on using the Crossbar and Autobahn modules.
 
 When npm is installed install the following packages:
-* Bower package manager
+#### 1. Bower package manager
 ``` 
 npm install -g bower
 ```

@@ -1,7 +1,7 @@
 # Overview 
 
-This Repo contains some guidanc and learning tutorials to get familiar with our tech stack
-It is aiming for developers, data engineers and data scientists
+This Repo contains some guidanc and learning tutorials to get familiar with our tech stack.
+It is aiming for developers, data engineers and data scientists.
 
 ## [1. Tech Stack](https://recordevolution.github.io/REonboarding/TechStack/README)
 
