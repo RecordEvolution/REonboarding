@@ -44,16 +44,16 @@ When npm is installed install the following packages:
 npm install -g bower
 ```
 
-* Polymer cli 
+#### 2. Polymer cli 
 ```
 npm install -g polymer-cli
 ```
 
-* Vue cli 
+#### 3. Vue cli 
 ```
 npm install -g @vue/cli
 ```
-* Crossbar Autobahn client 
+#### 4. Crossbar Autobahn client 
 ```
 # check the installed npm version
 npm -version
@@ -62,26 +62,64 @@ sudo npm install -g ws@1 autobahn
 # if version >= 4.5.0
 sudo npm install -g ws@2 autobahn
 ```
-This client is sometimes tricky to install localy. If you have issues [check the manual at https://github.com/crossbario/autobahn-js](https://github.com/crossbario/autobahn-js)
+This client is sometimes tricky to install localy. If you have issues check the manual at [https://github.com/crossbario/autobahn-js](https://github.com/crossbario/autobahn-js)
 
 
-### Python 3
-Install Python3 and Pypy3 (pip) 
+### Python
+Install Python 3 and Pypy 3 (pip) 
 
 
 5.3 pypy3 (brew install pypy3) —> done
 5.4 python3 (brew install python3) —> done
 5.4.1 bumpversion (sudo pip3 install bumpversion)
 
-6. Sublime text3 — done
-6.1 package mangager sublime text 3 -> done
-6.2 gitsavvy -> done
-6.2 GitGutter -> Issue
-6.3 SublimeCodeIntel -> done
-6.4 SideBarEnhancement -> done
-6.5 html, css, js beautify
-6.6 auto pep8
-6.7 REPL
+### Sublime
+Download the installer from [https://www.sublimetext.com/3](https://www.sublimetext.com/3) and install Sublime text3 to your Mac book.
+Sublime can be called directly from the terminal via `subl filename` 
+Then add the following sublime packages 
+
+
+#### 1. package controll
+perform the following steps to install package controll 
+1. open sublime
+2. click the Preferences > Browse Packages… menu
+3. Browse up a folder and then into the Installed Packages/ folder
+4. Download the Package Control.sublime-package from [https://packagecontrol.io/installation](https://packagecontrol.io/Package%20Control.sublime-package)and copy it into the Installed Packages/ directory
+5. Restart Sublime Text
+
+To install further packages this package manager can now directly be used. Package Control is driven by the Command Palette. To open the palette, press `cmd+shift+p` (OS X). All Package Control commands begin with `Package Control:`, so start searching by typing `Package`.
+
+The command palette will now show a number of commands. The most relevant is the `Install Package` command.
+Choose `Package Control: Install Package` and hit `enter` to browse in the list of available packages.
+To install a package selet it and hit `enter`. Then restart Sublime.
+
+Now install the following packages we ofte use 
+#### 2. gitsavvy
+Full git and GitHub integration with Sublime Text 3.
+#### 3. 
+Full-featured code intelligence and smart autocomplete engine
+
+#### 4. SideBarEnhancement
+Enhancements to Sublime Text sidebar. Files and folders.
+
+#### 5. Javascript Beautify
+js-beautify for sublime
+
+#### 6. SqlBeautify
+A sublime plugin to format SQL
+
+### 7. HTML-CSS-JS Prettify 
+HTML, CSS, JavaScript, JSON, React/JSX and Vue code formatter for Sublime 3 via node.js
+
+#### 6. Auto​PEP8
+Automatically formats Python code to conform to the PEP 8 style guide using autopep8 and pep8 modules
+
+#### Dockerfile Syntax Highlighting
+Dockerfile syntax
+
+#### 7. Sublime​REPL
+SublimeREPL - run an interpreter inside ST2 (Clojure, CoffeeScript, F#, Groovy, Haskell, Lua, MozRepl, NodeJS, Python + virtualenv, R, Ruby, Scala...)
+
 
 7. Docker for mac
 7.1 Kinematic (UI for Docker)
