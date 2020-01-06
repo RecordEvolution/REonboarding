@@ -79,7 +79,7 @@ Sublime can be called directly from the terminal via `subl filename`
 Then add the following sublime packages 
 
 
-#### 1. package controll
+#### 1. Package controll
 perform the following steps to install package controll 
 1. open sublime
 2. click the Preferences > Browse Packages… menu
@@ -93,8 +93,10 @@ The command palette will now show a number of commands. The most relevant is the
 Choose `Package Control: Install Package` and hit `enter` to browse in the list of available packages.
 To install a package selet it and hit `enter`. Then restart Sublime.
 
-Now install the following packages we ofte use 
-#### 2. gitsavvy
+Available packages can be browsed at [https://packagecontrol.io/](https://packagecontrol.io/)
+
+We use typically the following packages
+#### 2. Gitsavvy
 Full git and GitHub integration with Sublime Text 3.
 #### 3. 
 Full-featured code intelligence and smart autocomplete engine
@@ -108,16 +110,16 @@ js-beautify for sublime
 #### 6. SqlBeautify
 A sublime plugin to format SQL
 
-### 7. HTML-CSS-JS Prettify 
+#### 7. HTML-CSS-JS Prettify 
 HTML, CSS, JavaScript, JSON, React/JSX and Vue code formatter for Sublime 3 via node.js
 
 #### 6. Auto​PEP8
 Automatically formats Python code to conform to the PEP 8 style guide using autopep8 and pep8 modules
 
-#### Dockerfile Syntax Highlighting
+#### 7. Dockerfile Syntax Highlighting
 Dockerfile syntax
 
-#### 7. Sublime​REPL
+#### 8. Sublime​REPL
 SublimeREPL - run an interpreter inside ST2 (Clojure, CoffeeScript, F#, Groovy, Haskell, Lua, MozRepl, NodeJS, Python + virtualenv, R, Ruby, Scala...)
 
 
