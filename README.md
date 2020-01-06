@@ -1,12 +1,9 @@
-layout: page
-title: "PAGE TITLE"
-
-# Onboarding Record Evolution
+# Overview 
 
 This Repo contains some guidanc and learning tutorials to get familiar with our tech stack
 It is aiming for developers, data engineers and data scientists
 
-## 1. Tech Stack
+## [1. Tech Stack](https://recordevolution.github.io/REonboarding/TechStack/README)
 
 This folder contains a list of out software that shoud be installed on your laptop
 
