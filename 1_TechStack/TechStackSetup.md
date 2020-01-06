@@ -18,23 +18,60 @@ Set up your user
 
 
 ### Google GDrive 
-install the GDrive file stream adapter to your mac so that our GDrive system is available on your local file system on your Mac Book
+Install the GDrive file stream adapter to your mac so that our GDrive system is available on your local file system on your Mac Book
 Therefore follow the instructions in
 [Download and HowTo at: https://www.google.com/drive/download/ ](https://www.google.com/drive/download/)
 
-3. Slack (local client)
-4. Homberew (https://brew.sh/)
-4.1 git (brew install git) —> done
-4.2 npm (install from website not via brew) -> done
+### Slack
+Go to the Apple App Store, install the local client to your Mac Book and create your user account. ([More information: ](https://slack.com/intl/de-de/downloads/mac))
+Join our workspace `recordevolution.slack.com` where you should have been added. If not reach out to Marko
+
+
+### Homebrew 
+(https://brew.sh/)
+
+### Git 
+[Download git from https://git-scm.com/downloads](https://git-scm.com/downloads) and install on your Mac Book.
+Configure git and connect it to Github. 
+
+### Node and npm 
+[Download Node.js from https://nodejs.org/en/download/](https://nodejs.org/en/download/) and install on your Mac Book.
+!Warning: do not install node and npm via brew. This causes some weird error on using the Crossbar and Autobahn modules.
+
+When npm is installed install the following packages:
+* Bower package manager
+``` 
+npm install -g bower
+```
+
+* Polymer cli 
+```
+npm install -g polymer-cli
+```
+
+* Vue cli 
+```
+npm install -g @vue/cli
+```
+* Crossbar Autobahn client 
+```
+# check the installed npm version
+npm -version
+# if version < 4.5.0
+sudo npm install -g ws@1 autobahn
+# if version >= 4.5.0
+sudo npm install -g ws@2 autobahn
+```
+This client is sometimes tricky to install localy. If you have issues [check the manual at https://github.com/crossbario/autobahn-js](https://github.com/crossbario/autobahn-js)
+
+
+### Python 3
+Install Python3 and Pypy3 (pip) 
+
+
 5.3 pypy3 (brew install pypy3) —> done
 5.4 python3 (brew install python3) —> done
 5.4.1 bumpversion (sudo pip3 install bumpversion)
-git 
-5. npm/Node
-5.1 nodejs —> done
-5.2 bower —> done
-5.3 nodejs —>done
-5.4 Polymer-cli (npm install -g polymer-cli) -> done
 
 6. Sublime text3 — done
 6.1 package mangager sublime text 3 -> done
