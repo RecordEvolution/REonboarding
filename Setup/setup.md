@@ -82,7 +82,7 @@ Simple way is to install Python 3 via brew but this might need some addional con
 brew install python3
 ```
 
-#### Install Conda 
+#### Install Python via Conda 
 Installing Conda / Anacoda allows to easy create fully configured capsulated evironments that do not interfere with the system Python.
 Compared to virtualenv conda also capsulates system dependencies like gcc or java sdk into the environment
 
@@ -122,14 +122,6 @@ pip install numpy
 # or
 python -m pip install numpty
 ```
-
-
-
-
-
-5.3 pypy3 (brew install pypy3) —> done
-5.4 python3 (brew install python3) —> done
-5.4.1 bumpversion (sudo pip3 install bumpversion)
 
 ### Sublime
 Download the installer from [https://www.sublimetext.com/3](https://www.sublimetext.com/3) and install Sublime text3 to your Mac book.
@@ -181,24 +173,94 @@ Dockerfile syntax
 SublimeREPL - run an interpreter inside ST2 (Clojure, CoffeeScript, F#, Groovy, Haskell, Lua, MozRepl, NodeJS, Python + virtualenv, R, Ruby, Scala...)
 
 
-7. Docker for mac
-7.1 Kinematic (UI for Docker)
-7.2 Minikube (kubernetes) 
+### Docker
+Install Docker for Mac including Kinematic (UI for Docker)
+1. Download Docker from [https://download.docker.com/mac/beta/Docker.dmg](https://download.docker.com/mac/beta/Docker.dmg)
+2. Double-click the DMG file, and drag-and-drop Docker into your Applications folder.
+3. You need to authorize the installation with your system password.
+4. Double-click Docker.app to start Docker.
+5. The whale in your status bar indicates Docker is running and accessible.
+6. Docker presents some information on completing common tasks and links to the documentation.
+7. You can access settings and other options from the whale in the status bar. a. Select About Docker to make sure you have the latest version.
 
-11. Anvil SimpleWebServer (https://anvilformac.com/)
-12. MDWiki a MarkdownWiki (http://dynalon.github.io/mdwiki/#!index.md)
-
-- PGAdmin 4
-- TablePlus
+### Kubernetes
+Install Minicube to create a single node virtual Kubernetes Cluster on your Mac
 
 
-## To learn
-1. Docker -> done
-- Kubenets
-- Crossbario -> done
-2. Ngix -> done
-3. Create a Webserver with Docker and Ngix and NodeJs on Raspberry
-4. Prime in Python: https://realpython.com/primer-on-python-decorators/
+### Postgres 
+####  1. Install a Postgres Database. 
+Idealy you start a Docker container with Postgres
+```
+docker run -d -p 5432:5432 --name my-postgres -e POSTGRES_PASSWORD=tingel postgres
+```
+
+#### 2. Connect via Postgres shell 
+```
+# first open the bash on the docker container
+docker exec -it my-postgres bash
+
+# then enter the psql shell
+psql -U postgress
+
+# then fire psql commands
+
+# 1. list all databases
+=# \l
+
+# 2. connect to a database
+=# \c dvdrental
+
+# 3. check out this databse
+=# \d
+
+# 4. Quit the postgres shell
+=# \q
+```
+
+#### 3. Connect via PG Admin
+
+#### 4. Connect via TablePlus
+
+#### 5. Connect via Python 
+Import the database adapter and Pandas
+
+```
+# Postgres database adapter 
+import psycopg2 as pgsgl
+# Pandas framework
+import pandas as pd
+```
+Read SQL statement into Pandas dataframe
+
+```
+hostname = 'jumper1.repods.io'
+username = 'tingel'
+password = 'tingel'
+database = 'reone'
+port = '49161'
+
+try:
+    conn = pgsgl.connect( host=hostname, user=username, password=password, dbname=database, port=port )
+    print("Yes!! connect to the database")
+except:
+    print("ERROR: I am unable to connect to the database")
+
+try: 
+    sqlquery='Select * from schema_abm.t_immoscout_2'
+    df = pd.read_sql(sqlquery,con=conn)
+    print("Hurra!! Data loaded into Dataframe")
+except:
+    print("ERROR: Data load failed")
+
+conn.close()
+```
+Check the data and get some insights
+```
+df.head()
+df.describe()
+df.columns
+```
+
 
 
 
