@@ -1,0 +1,23 @@
+# getting base image crossbario/autobahn-python
+FROM crossbario/autobahn-python
+
+MAINTAINER Alex Ortner <alex.ortner@record-evolution.de>
+
+#RUN apt-get update
+#RUN apt-get uprade
+
+RUN pip install --upgrade pip
+
+RUN pip install yahoo_fin
+
+RUN pip install requests
+
+#RUN pip install requests_html
+
+#RUN apk add --no-cache g++ wget
+#RUN wget https://pypi.python.org/packages/da/c6/0936bc5814b429fddb5d6252566fe73a3e40372e6ceaf87de3dec1326f28/pandas-0.22.0-cp36-cp36m-manylinux1_x86_64.whl
+#RUN pip install pandas-0.22.0-cp36-cp36m-manylinux1_x86_64.whl
+
+RUN pip install pandas
+
+CMD ["echo", "pyhon packaes installed"]

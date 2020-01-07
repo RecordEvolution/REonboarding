@@ -1,0 +1,14 @@
+{
+  "name": "croossbar",
+  "version": "1.0.0",
+  "description": "CrossbarIO tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Ortner @Record-Evolution",
+  "license": "ISC",
+  "dependencies": {
+    "autobahn": "^19.7.2"
+  }
+}
